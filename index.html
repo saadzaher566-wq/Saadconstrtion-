@@ -3,150 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saad pour la Construction et Architecture</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; /* Blanc */
-            color: #000000; /* Noir */
-        }
-        header {
-            background-color: #008000; /* Vert */
-            color: #ffffff; /* Blanc */
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #000000; /* Noir */
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #ffffff; /* Blanc */
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #008000; /* Vert */
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-        }
-        .categories {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .category-button {
-            background-color: #008000; /* Vert */
-            color: #ffffff; /* Blanc */
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-        .category-button:hover {
-            background-color: #000000; /* Noir */
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            margin: 10px;
-            border: 2px solid #008000; /* Vert */
-        }
-        footer {
-            background-color: #000000; /* Noir */
-            color: #ffffff; /* Blanc */
-            text-align: center;
-            padding: 10px;
-        }
-        .decoration {
-            background-image: url('https://via.placeholder.com/800x200/008000/ffffff?text=Construction+et+Immobilier'); /* Placeholder pour décoration liée à la construction */
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            margin: 20px 0;
-        }
-    </style>
+    <title>Saad Construction & Architecture - Settat, Maroc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Saad pour la Construction et Architecture</h1>
-        <p>Fondateur : Saad Zaher</p>
-        <p>Localisation : Maroc, Ville de Settat</p>
-        <p>Domaine : B2B - Construction de maisons de luxe, villas et lotissements</p>
-    </header>
-
-    <nav>
-        <a href="#about">À Propos</a>
-        <a href="#services">Services</a>
-        <a href="#prices">Prix</a>
-        <a href="#gallery">Galerie</a>
-        <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Saad Construction</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#apropos" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
-    <section id="about" class="decoration">
-        <!-- Décoration liée aux secteurs de la construction et de l'immobilier -->
-    </section>
-
-    <section id="services">
-        <h2>Nos Services</h2>
-        <p>Nous proposons des services de construction et d'architecture spécialisés dans les maisons de luxe, villas et lotissements.</p>
-        <h3>Catégories de Maisons</h3>
-        <div class="categories">
-            <button class="category-button" onclick="alert('Maisons Luxe')">Luxe</button>
-            <button class="category-button" onclick="alert('Maisons Modernes')">Moderne</button>
-            <button class="category-button" onclick="alert('Bâtiments')">Bâtiment</button>
-            <button class="category-button" onclick="alert('Villas')">Villa</button>
-            <button class="category-button" onclick="alert('Lotissements')">Lotissement</button>
-            <button class="category-button" onclick="alert('Rayid')">Rayid</button>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Construisons l'avenir du Maroc</h1>
+            <p class="hero-description">Expert en construction et architecture moderne à Settat, nous transformons vos rêves en réalité avec excellence et innovation marocaine.</p>
+            <div class="hero-buttons">
+                <a href="tel:+212615171266" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Appeler 0615-17-12-66
+                </a>
+                <a href="#contact" class="btn btn-secondary">Demander un devis</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Construction moderne Maroc">
         </div>
     </section>
 
-    <section id="prices">
-        <h2>Prix</h2>
-        <p>Nos prix varient selon le projet. Contactez-nous pour un devis personnalisé.</p>
-        <ul>
-            <li>Maisons Luxe : À partir de 500 000 MAD</li>
-            <li>Villas : À partir de 800 000 MAD</li>
-            <li>Lotissements : À partir de 1 000 000 MAD</li>
-            <!-- Ajoutez d'autres prix selon les besoins -->
-        </ul>
-    </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services à Settat</h2>
+            <p class="section-subtitle">Des solutions complètes pour tous vos projets de construction et d'architecture au Maroc</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Architecture Marocaine & Design</h3>
+                    <p>Conception architecturale innovante alliant tradition marocaine et modernité, adaptée à vos besoins et budget.</p>
+                    <ul>
+                        <li>Plans architecturaux</li>
+                        <li>Design intérieur marocain</li>
+                        <li>3D visualisation</li>
+                        <li>Permis de construire</li>
+                    </ul>
+                </div>
 
-    <section id="gallery">
-        <h2>Galerie de Photos</h2>
-        <div class="gallery">
-            <!-- Placeholders pour photos de maisons. Remplacez par de vraies URLs d'images -->
-            <img src="https://via.placeholder.com/300x200/008000/ffffff?text=Maison+Luxe" alt="Maison Luxe">
-            <img src="https://via.placeholder.com/300x200/008000/ffffff?text=Villa" alt="Villa">
-            <img src="https://via.placeholder.com/300x200/008000/ffffff?text=Lotissement" alt="Lotissement">
-            <img src="https://via.placeholder.com/300x200/008000/ffffff?text=Maison+Moderne" alt="Maison Moderne">
-            <!-- Ajoutez plus d'images selon les besoins -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction & Rénovation</h3>
+                    <p>Construction neuve et rénovation complète avec des matériaux de haute qualité adaptés au climat marocain.</p>
+                    <ul>
+                        <li>Villas et maisons</li>
+                        <li>Riad rénovation</li>
+                        <li>Extensions</li>
+                        <li>Aménagement intérieur</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Bâtiments Commerciaux</h3>
+                    <p>Construction de bâtiments commerciaux et industriels avec respect des normes marocaines.</p>
+                    <ul>
+                        <li>Magasins et boutiques</li>
+                        <li>Bureaux professionnels</li>
+                        <li>Entrepôts</li>
+                        <li>Complexes industriels</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3>Construction Traditionnelle</h3>
+                    <p>Expertise en construction traditionnelle marocaine avec techniques artisanales ancestrales.</p>
+                    <ul>
+                        <li>Zellige et carrelage</li>
+                        <li>Plâtre sculpté</li>
+                        <li>Bois ciselé</li>
+                        <li>Architecture andalouse</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Construction Durable</h3>
+                    <p>Solutions écologiques adaptées au climat aride de Settat et respectueuses de l'environnement.</p>
+                    <ul>
+                        <li>Matériaux locaux</li>
+                        <li>Isolation thermique</li>
+                        <li>Énergies solaires</li>
+                        <li>Gestion de l'eau</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Entretien</h3>
+                    <p>Services de maintenance pour préserver vos bâtiments dans les conditions climatiques de Settat.</p>
+                    <ul>
+                        <li>Maintenance préventive</li>
+                        <li>Réparations urgentes</li>
+                        <li>Rénovation légère</li>
+                        <li>Nettoyage façade</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : saadzaher566@gmail.com</p>
-        <p>Téléphone : 0615171266</p>
-        <p>Instagram : <a href="https://www.instagram.com/Saadconstruction" target="_blank">@Saadconstruction</a></p>
-        <p>Facebook : <a href="https://www.facebook.com/Saadconstrtion" target="_blank">Saadconstrtion</a></p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Nos Réalisations à Settat</h2>
+            <p class="section-subtitle">Découvrez nos projets les plus récents dans la région de Casablanca-Settat</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="residential">Résidentiel</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="traditionnel">Traditionnel</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Villa marocaine">
+                        <div class="portfolio-overlay">
+                            <h4>Villa Moderne Settat</h4>
+                            <p>Construction d'une villa contemporaine de 400m² avec jardin marocain</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bâtiment commercial Maroc">
+                        <div class="portfolio-overlay">
+                            <h4>Centre Commercial Settat</h4>
+                            <p>Construction d'un complexe commercial moderne de 3000m²</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="traditionnel">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Riad traditionnel">
+                        <div class="portfolio-overlay">
+                            <h4>Riad Rénové</h4>
+                            <p>Rénovation complète d'un riad traditionnel avec zellige authentique</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maison marocaine">
+                        <div class="portfolio-overlay">
+                            <h4>Maison Familiale</h4>
+                            <p>Construction maison traditionnelle avec patio central et fontaine</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bureaux Settat">
+                        <div class="portfolio-overlay">
+                            <h4>Bureaux Modernes</h4>
+                            <p>Aménagement de bureaux pour entreprise locale à Settat</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="traditionnel">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architecture marocaine">
+                        <div class="portfolio-overlay">
+                            <h4>Maison Traditionnelle</h4>
+                            <p>Construction avec architecture andalouse et décoration marocaine</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Saad pour la Construction et Architecture. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Pourquoi Choisir Saad Construction ?</h2>
+                    <p>Saad pour la construction et architecture est une entreprise marocaine leader dans la région de Settat, avec plus de 15 ans d'expérience. Nous combinons tradition architecturale marocaine et modernité pour créer des espaces exceptionnels.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>300+</h3>
+                            <p>Projets réalisés au Maroc</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>99%</h3>
+                            <p>Clients satisfaits</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>35+</h3>
+                            <p>Artisans marocains qualifiés</p>
+                        </div>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certifications marocaines</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Assurance complète</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <span>Récompenses d'architecture marocaine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112c89a934?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Équipe Saad Construction">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients à Settat</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Saad Construction a magnifiquement rénové notre riad à Settat. Leur maîtrise du zellige traditionnel est exceptionnelle. Un vrai travail d'artisans marocains !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client marocain">
+                        <div>
+                            <h4>Fatima Alami</h4>
+                            <span>Propriétaire riad, Settat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Travail irréprochable et respect des délais. Ils ont construit notre villa en intégrant parfaitement les éléments traditionnels marocains. Je recommande vivement !"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client">
+                        <div>
+                            <h4>Ahmed Benjelloun</h4>
+                            <span>Entrepreneur, Settat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Une équipe compétente et créative. Notre nouveau bureau à Settat dépasse toutes nos attentes avec son design moderne et fonctionnel."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client">
+                        <div>
+                            <h4>Souad El Amrani</h4>
+                            <span>Directrice entreprise, Settat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous à Settat</h2>
+            <p class="section-subtitle">Prêt à concrétiser votre projet au Maroc ? Appelez-nous directement !</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Contact Direct</h4>
+                            <p><strong>06 15 17 12 66</strong></p>
+                            <p>Appel gratuit au Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse à Settat</h4>
+                            <p>123 Avenue Mohammed V<br>Settat 23000, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@saadconstruction.ma</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires Maroc</h4>
+                            <p>Lun - Ven: 8h - 18h<br>Sam: 9h - 12h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map"></i>
+                        <div>
+                            <h4>Zone d'intervention</h4>
+                            <p>Settat, Casablanca, Berrechid, Benslimane et régions</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="tel:+212615171266" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">
+                            <i class="fas fa-phone"></i> Appeler Maintenant 06 15 17 12 66
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-for
